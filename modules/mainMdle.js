@@ -1,5 +1,4 @@
 //main module
 'use strict';
-
-var app = angular.module('ngApp',['ngRoute','ngResource']); 
+var pscoreApp = angular.module('pscoreApp',['ngRoute','ngResource']); 
 

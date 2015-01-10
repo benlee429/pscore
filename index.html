@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html ng-app="ngApp">
+<html ng-app="pscoreApp">
 <head>
   <title>pscore</title>
 
   <script src="js/angular.js"></script>
   <script src="modules/mainMdle.js"></script>
-  <script src="controllers/mainCtlr.js"></script>
   <script src="node_modules/angular-route/angular-route.js"></script>
   <script src="node_modules/angular-resource/angular-resource.js"></script>
+  <script src="controllers/mainCtlr.js"></script>
+  <script src="directives/navBarDir.js"></script>
+  <script src="directives/contentDir.js"></script>
+  <script src="directives/subNavDir.js"></script>
   <link href="css/bootstrap.css" rel="stylesheet">
 </head>
 
 <body ng-controller="mainCtlr">
-  {{data}} 
+  <nav-bar></nav-bar>
+  <content></content>
+  <div sub-nav=''> </div>
 </body>
 </html>
