@@ -1,3 +1,5 @@
-<div>
-  <span ng-repeat='header in data.headers' ng-bind='header'></span>
-</div>
+<ul class='nav navbar-nav'>
+  <li ng-repeat='header in data.headers' ng-class='isActive' >
+    <a ng-href={{header.route}} ng-click='updateActive' ng-bind='header.pageTitle'></a>
+  </li>
+</ul>
